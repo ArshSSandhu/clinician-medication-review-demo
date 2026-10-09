@@ -1,0 +1,68 @@
+:root { font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; color: #243534; background: #f4f6f5; font-synthesis: none; line-height: 1.55; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+p { margin: 0.5rem 0 0; }
+h1, h2, h3 { line-height: 1.25; margin: 0; }
+h1 { font-size: clamp(1.8rem, 3vw, 2.4rem); letter-spacing: -0.04em; font-weight: 650; }
+h2 { font-size: 1.15rem; font-weight: 650; }
+h3 { font-size: 0.95rem; font-weight: 650; }
+.demo-notice { padding: 10px 32px; display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; font-size: 0.82rem; color: #544319; background: #faf1d8; border-bottom: 1px solid #e8dcbb; }
+.app-header { display: flex; align-items: center; gap: 12px; padding: 20px 40px; background: white; border-bottom: 1px solid #dce4e1; }
+.app-header p { margin: 0; font-size: 0.8rem; color: #566863; }
+.brand-mark { display: grid; place-items: center; width: 36px; height: 36px; border-radius: 7px; background: #244d43; color: white; font-weight: 650; }
+.local-label { margin-left: auto; font-size: 0.8rem; color: #566863; }
+main { max-width: 1240px; padding: 36px 32px 20px; margin: auto; }
+.page-heading { display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; margin-bottom: 30px; }
+.page-heading p { color: #566863; max-width: 630px; }
+.eyebrow { font-size: 0.73rem; font-weight: 650; letter-spacing: 0.035em; color: #566863; }
+.page-heading .eyebrow { margin-bottom: 10px; text-transform: uppercase; }
+.patient-select { flex-shrink: 0; min-width: 250px; }
+.patient-select label { display: block; margin-bottom: 6px; font-size: 0.8rem; font-weight: 600; }
+select { width: 100%; padding: 11px; border: 1px solid #a6b6af; border-radius: 5px; background: white; font: inherit; color: inherit; }
+.patient-heading { border: 1px solid #d4ded9; border-left: 4px solid #31594e; border-radius: 6px; background: #edf2ef; padding: 18px 20px; display: flex; justify-content: space-between; align-items: center; gap: 16px; margin-bottom: 22px; }
+.patient-heading p { font-size: 0.85rem; color: #566863; }
+.workspace-grid { display: grid; grid-template-columns: minmax(0, 1.65fr) minmax(0, 1fr); gap: 22px; align-items: start; }
+.column { min-width: 0; display: grid; gap: 22px; }
+.panel { min-width: 0; border: 1px solid #d4ded9; border-radius: 7px; background: white; padding: 22px; }
+.section-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.section-note { font-size: 0.8rem; color: #566863; margin-top: 10px; }
+.medication-group { margin-top: 22px; padding-top: 18px; border-top: 1px solid #dce4e1; }
+.medication-summary { display: flex; flex-wrap: wrap; gap: 8px 18px; list-style: none; padding: 12px 0; margin: 14px 0 0; border-top: 1px solid #dce4e1; font-size: 0.8rem; }
+.medication-summary + .medication-group { margin-top: 0; }
+.count { display: inline-block; padding: 1px 7px; margin-left: 5px; background: #edf1ef; border: 1px solid #d5ded9; border-radius: 4px; font-size: 0.73rem; font-weight: 600; color: #465a53; }
+.table-scroll { overflow-x: auto; margin-top: 12px; }
+table { width: 100%; border-collapse: collapse; font-size: 0.85rem; text-align: left; }
+thead th { font-size: 0.73rem; color: #52655d; font-weight: 600; padding: 8px 9px; background: #f4f6f5; }
+tbody th, td { padding: 13px 9px; border-bottom: 1px solid #e0e6e3; vertical-align: top; }
+tbody th { font-weight: 600; min-width: 135px; }
+small { display: block; font-weight: 400; font-size: 0.73rem; color: #566863; margin-top: 5px; }
+.badge { display: inline-block; font-size: 0.71rem; font-weight: 600; padding: 3px 7px; border: 1px solid #bdcbc5; border-radius: 4px; white-space: nowrap; color: #435a51; background: #f2f5f3; }
+.badge.active { color: #244d43; background: #edf5ef; }
+.badge.discontinued { color: #485451; background: #f1f2f1; border-style: dashed; }
+.badge.unknown { color: #65491f; background: #fbf3e3; }
+.missing-value { font-style: italic; color: #65491f; }
+.empty { color: #566863; font-size: 0.85rem; margin: 12px 0 0; }
+.context { border-top: 1px solid #e0e6e3; padding-top: 13px; margin-top: 20px; font-size: 0.75rem; color: #566863; }
+.allergy-entry { padding: 15px; background: #f7f8f7; border: 1px solid #dce4e1; border-radius: 4px; margin-top: 14px; }
+dl { display: flex; gap: 32px; margin: 12px 0 0; }
+dt { color: #566863; font-size: 0.75rem; }
+dd { margin: 0; font-size: 0.85rem; }
+.history-state { margin-top: 18px; padding: 16px; border: 1px solid #d5ded9; border-radius: 4px; background: #f7f8f7; }
+.history-state p { font-size: 0.85rem; }
+.gaps ul { margin: 14px 0 0; padding-left: 20px; font-size: 0.85rem; }
+.gaps li + li { margin-top: 7px; }
+.visit-date { font-size: 0.8rem; font-weight: 600; margin-top: 12px; }
+.visit-date span { font-weight: 400; color: #566863; }
+.panel > p { font-size: 0.85rem; }
+.checklist { list-style: none; padding: 0; margin: 14px 0; }
+.checklist li + li { border-top: 1px solid #e0e6e3; }
+.checklist label { display: flex; gap: 12px; align-items: flex-start; cursor: pointer; padding: 12px 0; font-size: 0.85rem; }
+input[type=checkbox] { width: 18px; height: 18px; margin: 2px 0 0; flex-shrink: 0; accent-color: #31594e; }
+input:checked + span { text-decoration: line-through; }
+footer { padding: 24px 0 6px; color: #566863; font-size: 0.75rem; text-align: center; }
+:focus-visible { outline: 3px solid #356bcd; outline-offset: 4px; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+.skip-link { position: fixed; top: -100px; left: 16px; padding: 12px; z-index: 2; background: white; color: #243534; }
+.skip-link:focus { top: 12px; }
+@media (max-width: 900px) { .workspace-grid { grid-template-columns: 1fr; } .page-heading { align-items: flex-start; flex-direction: column; } .patient-select { width: 100%; } }
+@media (max-width: 550px) { main { padding: 24px 16px; } .app-header { padding: 16px; } .local-label { display: none; } .patient-heading { align-items: flex-start; flex-direction: column; } .panel { padding: 18px; } .demo-notice { padding: 10px 16px; gap: 3px; } .section-heading { flex-wrap: wrap; } }
